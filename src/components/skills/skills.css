@@ -1,0 +1,26 @@
+.skillSet{
+  width: 85%;
+  margin: 0 auto;
+  padding: 7% 5px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px var(--color-primary-variant);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  color: var(--color-white);
+}
+
+.eachStack img{
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+.eachStack {
+  width: 80px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+#skill h2{
+  margin-bottom: 30px;
+}

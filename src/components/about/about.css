@@ -1,0 +1,8 @@
+.aboutMessage{
+  text-indent: 10%;
+  padding: 5%;
+  color: var(--color-light);
+}
+.aboutMessage p{
+  margin-bottom: 10px;
+}

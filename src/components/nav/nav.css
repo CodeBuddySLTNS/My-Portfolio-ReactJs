@@ -1,0 +1,34 @@
+nav{
+  background: rgba(0,0,0,.2);
+  width: max-content;
+  padding: 2% 4%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  backdrop-filter: blur(15px);
+}
+nav a{
+  width: 30px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  padding: 3px 3px 4px;
+  color: var(--color-white);
+}
+
+.active{
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-radius: 50%;
+}
+.navIcon{
+  font-size: 18px;
+  aspect-ratio: 1/1;
+}
