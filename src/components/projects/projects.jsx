@@ -1,21 +1,23 @@
 import './projects.css'
-import scImg from '../../assets/sC.jpg'
-import firstWeb from '../../assets/web1.jpg'
+import p1 from '../../assets/SubjectSchedSystem.jpg'
+import p2 from '../../assets/ELM.jpg'
 
-const Projects = ()=>{
+const Projects = () => {
   
   const projects = [
       {
-        img:scImg, 
-        title:'Simple Interest Calculator',
-        body:'A functional simple interest calculator that can solve for interest, principal, rate, and time.',
-        link:'Simple Interest.html'
+        img:p1, 
+        title:'Subject Scheduling System',
+        body:'A system that can detect conflicts to any subject schedules per department. Exports the schedules as word document (.docx).',
+        tech: ['Express', 'Nodejs'],
+        link:'https://subject-scheduling-system.onrender.com'
       },
       {
-        img:firstWeb,
-        title:'My First Portfolio ',
-        body:'This was my first portfolio uploaded online. You can check this out, still available online.',
-        link:'https://renzcole.great-site.net/'
+        img:p2,
+        title:'E-Learning Materials Management System',
+        body:'A system that manages E-Learning Materials in one place where students can view files online, share files via link, and even download files.',
+        tech: ['MongoDB', 'Express', 'Nodejs'],
+        link:'https://elm-management-system.onrender.com'
       }
     ]
   return(
@@ -24,15 +26,18 @@ const Projects = ()=>{
         <h2>Projects</h2>
         
         <div className='projects'>
-          {projects.map((project)=>(
+          {projects.map((project) => (
             
           <div className='project'>
             <img src={project.img}/>
             <div className='projectInfo'>
-              <h3>{project.title}</h3>
-              <p>{project.body}</p>
+              <div>
+                <h3>{project.title}</h3>
+                <p>{project.body}</p>
+                <p>Tech: {project.tech.map((t) => t).join(', ')}</p>
+              </div>
+              <a href={project.link} className='linkBtn' target='_blank'>Live Demo</a>
             </div>
-            <a href={project.link}className='linkBtn' target='_blank'>Live Demo</a>
           </div>
           
           ))}

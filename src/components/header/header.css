@@ -28,3 +28,10 @@
 .resumeBtn .btn{
   font-weight: 500;
 }
+
+@media screen and (min-width: 900px) {
+  .ME {
+    width: 50%;
+    margin-top: 30px;
+  }
+}

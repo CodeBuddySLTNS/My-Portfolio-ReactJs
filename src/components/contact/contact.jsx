@@ -4,7 +4,7 @@ import { FaYoutube, FaGithub, FaFacebook, FaPhoneAlt } from "react-icons/fa"
 const Contact = ()=>{
   return(
       <section id='contact'> 
-        <h5>Reach me out</h5>
+        <h5>Reach out</h5>
         <h2>Contacts</h2>
         <div className='contact'>
           <p className='contactDescription'>
@@ -18,9 +18,15 @@ const Contact = ()=>{
           
           <p className='socialInfo'>You can also find me on these platforms:</p>
           <div className='socials'>
-            <FaFacebook className='icon'/>
-            <FaYoutube className='icon'/>
-            <FaGithub className='icon'/>
+            <a href="https://www.facebook.com/codebuddySolutions">
+              <FaFacebook className='icon'/>
+            </a>
+            <a href="https://www.youtube.com/@CodeBuddySolutions">
+              <FaYoutube className='icon'/>
+            </a>
+            <a href="https://github.com/CodeBuddySLTNS">
+              <FaGithub className='icon'/>
+            </a>
           </div>
         </div>
       </section>

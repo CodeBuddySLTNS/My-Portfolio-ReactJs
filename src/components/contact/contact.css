@@ -2,16 +2,15 @@
   width: 100%;
   padding:10% 5%;
 }
-.contactDescription{
-  text-indent: 10%;
+.contact p{
+  text-align: center;
 }
 .contactDetails{
   margin-top: 20px;
   text-align: center;
 }
 .socialInfo{
-  padding: 10% 5% 5%;
-  text-indent: ;
+  padding: 10% 0 5%;
 }
 .socials{
   display: flex;

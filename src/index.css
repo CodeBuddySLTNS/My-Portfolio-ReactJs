@@ -47,6 +47,7 @@ img{
   width: max-content;
 }
 .container{
+  width: 95%;
   margin: 0 auto;
 }
 section{
@@ -75,4 +76,12 @@ a{
 .btnPrime{
   background: var(--color-primary);
   color: var(--color-bg);
+}
+@media screen and (min-width: 900px) {
+  .container {
+    width: 55%;
+  }
+  .section {
+    margin: 12% 0px 60px;
+  }
 }
